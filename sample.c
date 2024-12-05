@@ -1,9 +1,12 @@
-hello from sample.c
-hello from sample.c
-hello from sample.c
-hello from sample.c
-hello from sample.c
-hello from sample.c
-hello from sample.c
-hello from sample.c
+hi from sample code of c
+hi from sample code of c
+hi from sample code of c
+hi from sample code of c
+hi from sample code of c
+hi from sample code of c
+~
+
+
+
+
 
