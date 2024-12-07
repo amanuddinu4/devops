@@ -1,3 +1,50 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class BankAccount {
+    private String accountNumber;
+    private double balance;
+
+    public BankAccount(String accountNumber, double initialBalance) {
+        this.accountNumber = accountNumber;
+        this.balance = initialBalance;
+    }
+
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited: " + amount);
+        } else {
+            System.out.println("Deposit amount must be positive.");
+        }
+    }
+
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrew: " + amount);
+        } else {
+            System.out.println("Invalid withdrawal amount.");
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    @Override
+    public String toString() {
+        return "Account Number: " + accountNumber + ", Balance: " + balance;
+    }
+}
+
+class Customer {
+    private String name;
+    private List<BankAccount> accounts;
+
+    public Customer(String name) {
+
+
 public class BankAccount {
     private String accountNumber;
     private double balance;
